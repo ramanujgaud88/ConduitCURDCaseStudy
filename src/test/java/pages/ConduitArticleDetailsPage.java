@@ -10,7 +10,7 @@ public class ConduitArticleDetailsPage {
 	@FindBy(xpath = "(//*[text() = ' Edit Article'])[1]") WebElement editArticleArticleDetailsPage;
 	@FindBy(xpath = "(//*[text() = ' Delete Article'])[1]") WebElement deleteArticleArticleDetailsPage;
 	@FindBy(xpath = "//*[@class='article-page']//*[@class='banner']//*[@class='container']") WebElement artTitle;
-	@FindBy(xpath = "//*[@class='row article-content']/*[1]") WebElement artContent;
+	@FindBy(xpath = "//*[@class='row article-content']/*[1]/*[1]") WebElement artContent;
 	
 	public ConduitArticleDetailsPage (WebDriver driver) {
 		PageFactory.initElements(driver, this);

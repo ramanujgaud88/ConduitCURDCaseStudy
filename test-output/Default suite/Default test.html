@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 19 15:48:44 IST 2024</td>
+<td>Started on:</td><td>Tue Nov 19 15:51:59 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>46 seconds (46232 ms)</td>
+<tr><td>Total time:</td><td>61 seconds (61618 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,55 +76,29 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runners.ConduitCURDrunner.runScenario()'><b>runScenario</b><br>Test class: runners.ConduitCURDrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update an Article", "Conduit CRUD Functions"</td>
-<td><div><pre>java.lang.AssertionError: expected [RPG CCS] but found [Divya sample21]
+<td><div><pre>java.lang.AssertionError: expected [Changed/Updated Content] but found [Changed/Updated Content
+CCS]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at pages.ConduitGlobalFeedPage.validateAndClickOnLatestArticle(ConduitGlobalFeedPage.java:24)
-	at stepDefs.ConduitCURDStefDef.article_detail_page_should_be_displayed(ConduitCURDStefDef.java:111)
-	at ✽.Article detail page Should be displayed &quot;RPG CCS&quot;(file:///C:/workspace/New%20folder/ConduitCURDCaseStudy/src/test/resources/features/ConduitCRUD.feature:21)
-</pre></div><a href='#' onClick='toggleBox("stack-trace464994546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace464994546'><pre>java.lang.AssertionError: expected [RPG CCS] but found [Divya sample21]
+	at stepDefs.ConduitCURDStefDef.article_detail_must_be_updated(ConduitCURDStefDef.java:104)
+	at ✽.Article detail must be updated(file:///C:/workspace/New%20folder/ConduitCURDCaseStudy/src/test/resources/features/ConduitCRUD.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace955743449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace955743449'><pre>java.lang.AssertionError: expected [Changed/Updated Content] but found [Changed/Updated Content
+CCS]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at pages.ConduitGlobalFeedPage.validateAndClickOnLatestArticle(ConduitGlobalFeedPage.java:24)
-	at stepDefs.ConduitCURDStefDef.article_detail_page_should_be_displayed(ConduitCURDStefDef.java:111)
-	at ✽.Article detail page Should be displayed &quot;RPG CCS&quot;(file:///C:/workspace/New%20folder/ConduitCURDCaseStudy/src/test/resources/features/ConduitCRUD.feature:21)
+	at stepDefs.ConduitCURDStefDef.article_detail_must_be_updated(ConduitCURDStefDef.java:104)
+	at ✽.Article detail must be updated(file:///C:/workspace/New%20folder/ConduitCURDCaseStudy/src/test/resources/features/ConduitCRUD.feature:23)
 </pre></div></td>
-<td>7</td>
-<td>runners.ConduitCURDrunner@6e6f2380</td></tr>
-<tr>
-<td title='runners.ConduitCURDrunner.runScenario()'><b>runScenario</b><br>Test class: runners.ConduitCURDrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete an Article", "Conduit CRUD Functions"</td>
-<td><div><pre>java.lang.AssertionError: expected [RPG CCS] but found [Divya sample21]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at pages.ConduitGlobalFeedPage.validateAndClickOnLatestArticle(ConduitGlobalFeedPage.java:24)
-	at stepDefs.ConduitCURDStefDef.article_detail_page_should_be_displayed(ConduitCURDStefDef.java:111)
-	at ✽.Article detail page Should be displayed &quot;RPG CCS&quot;(file:///C:/workspace/New%20folder/ConduitCURDCaseStudy/src/test/resources/features/ConduitCRUD.feature:26)
-</pre></div><a href='#' onClick='toggleBox("stack-trace185209393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace185209393'><pre>java.lang.AssertionError: expected [RPG CCS] but found [Divya sample21]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at pages.ConduitGlobalFeedPage.validateAndClickOnLatestArticle(ConduitGlobalFeedPage.java:24)
-	at stepDefs.ConduitCURDStefDef.article_detail_page_should_be_displayed(ConduitCURDStefDef.java:111)
-	at ✽.Article detail page Should be displayed &quot;RPG CCS&quot;(file:///C:/workspace/New%20folder/ConduitCURDCaseStudy/src/test/resources/features/ConduitCRUD.feature:26)
-</pre></div></td>
-<td>7</td>
+<td>18</td>
 <td>runners.ConduitCURDrunner@6e6f2380</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -137,7 +111,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='runners.ConduitCURDrunner.runScenario()'><b>runScenario</b><br>Test class: runners.ConduitCURDrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create new Article", "Conduit CRUD Functions"</td>
 <td></td>
-<td>15</td>
+<td>14</td>
+<td>runners.ConduitCURDrunner@6e6f2380</td></tr>
+<tr>
+<td title='runners.ConduitCURDrunner.runScenario()'><b>runScenario</b><br>Test class: runners.ConduitCURDrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete an Article", "Conduit CRUD Functions"</td>
+<td></td>
+<td>12</td>
 <td>runners.ConduitCURDrunner@6e6f2380</td></tr>
 <tr>
 <td title='runners.ConduitCURDrunner.runScenario()'><b>runScenario</b><br>Test class: runners.ConduitCURDrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View Article", "Conduit CRUD Functions"</td>
