@@ -6,11 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ConduitArticleEditorPage {
-	@FindBy(xpath = "//input[@placeholder='Article Title']") WebElement artTitle;
+	@FindBy(xpath = "//*[@placeholder='Article Title']") WebElement artTitle;
 	@FindBy(xpath = "//input[@name='description']") WebElement artDesc;
-	@FindBy(xpath = "//input[@placeholder='Write your article (in markdown)']") WebElement artContent;
-	@FindBy(xpath = "//input[@placeholder='Enter tags']") WebElement artTags;
-	@FindBy(xpath = "//input[text()='Publish Article']") WebElement publishArticleButton;
+	@FindBy(xpath = "//*[@name='body']") WebElement artContent;
+	@FindBy(xpath = "//*[@name='tags']") WebElement artTags;
+	@FindBy(xpath = "//*[text()='Publish Article']") WebElement publishArticleButton;
+	@FindBy(xpath = "//*[text()='Update Article']") WebElement updateArticleButton;
+	
 	
 	public ConduitArticleEditorPage (WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -26,5 +28,29 @@ public class ConduitArticleEditorPage {
 		artContent.sendKeys(Content);
 		artTags.sendKeys(Tags);
 		publishArticleButton.click();
+	}
+	
+	public void updateArticleTitle(String updateValue) {
+		artTitle.clear();
+		artTitle.sendKeys(updateValue);
+		updateArticleButton.click();
+	}
+	
+	public void updateArticleDescription(String updateValue) {
+		artDesc.clear();
+		artDesc.sendKeys(updateValue);
+		updateArticleButton.click();
+	}
+	
+	public void updateArticleContent(String updateValue) {
+		artContent.clear();
+		artContent.sendKeys(updateValue);
+		updateArticleButton.click();
+	}
+	
+	public void updateArticleTag(String updateValue) {
+		artTags.clear();
+		artTags.sendKeys(updateValue);
+		updateArticleButton.click();
 	}
 }

@@ -30,7 +30,8 @@ public class ConduitHomePage {
 		globleFeedButton.click();
 	}
 	public boolean isOnHomePage(){
-		return homepageButton.isDisplayed();
+		System.out.println("To verify user is on Homepage Checking Homepage-YourFeed Element is active and Displayed");
+		return yourFeedButton.isDisplayed();
 	}
 
 }
